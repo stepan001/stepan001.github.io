@@ -26,6 +26,12 @@ img {
 /**********************************
 HEADING
 ***********************************/
+header {
+	float: left; //for styling desktop layout
+	margin: 0 0 30px 0;
+	padding: 5px 0 0 0;
+	width: 100%; //because floated, we must specify a width
+}
 
 #logo {
 	text-align: center;
@@ -53,9 +59,25 @@ NAVIGATION
 ***********************************/
 
 nav {
-  text-align: center;
-  padding: 10px 0;
-  margin: 20px 0 0;
+	text-align: center;
+	padding: 10px 0;
+	margin: 20px 0 0;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0 10px;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+}
+
+nav a {
+	font-weight: 800;
+	padding: 15px 10px;
+
 }
 
 
@@ -65,13 +87,19 @@ FOOTER
 ***********************************/
 
 footer {
-  font-size: 0.75em;
-  text-align: center;
-  clear: both;
-  padding-top: 50px;
-  color: #ccc;
-
+	font-size: 0.75em;
+	text-align: center;
+	clear: both;
+	padding-top: 50px;
+	color: #ccc;
 }
+
+.social-icon {
+	width: 20px; //half size of resolution of icons
+	height: 20px;
+	margin: 0 5px;
+}
+
 
 
 
@@ -80,17 +108,17 @@ PAGE: PORTFOLIO
 ***********************************/
 
 #gallery {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 #gallery li {
-  float: left;
-  width: 45%;
-  margin: 2.5%;
-  background-color: #f5f5f5;
-  color: #bdc3c7;
+	float: left;
+	width: 45%;
+	margin: 2.5%;
+	background-color: #f5f5f5;
+	color: #bdc3c7;
 }
 
 #gallery li a p {
@@ -101,43 +129,58 @@ PAGE: PORTFOLIO
 }
 
 
+
+/**********************************
+PAGE: ABOUT
+***********************************/
+
+.profile-photo {
+	display: block; // allow us to center image via margin
+	max-width: 150px;
+	margin: 0 auto 30px; // top l+r bot
+	border-radius: 100%;
+}
+
+
+
+
 /**********************************
 COLORS
 ***********************************/
 
 /* site body */
 body {
-  background-color: #fff;
-  color: #999;
+	background-color: #fff;
+	color: #999;
 }
 
 /* green header */
 header {
-  background: #6ab47b;
-  border-color: #599a68;
+	background: #6ab47b;
+	border-color: #599a68;
 }
 
 /* nav background on mobile */
 nav {
-  background: #599a68;
+	background: #599a68;
 }
 
 /* logo text */
 h1, h2 {
-  color: #fff;
+	color: #fff;
 }
 
 /* links */
 a {
-  color: #6ab47b;
+	color: #6ab47b;
 }
 
 /* nav link */
 nav a, nav a:visited {
-  color: #fff;
+	color: #fff;
 }
 
 /* selected nav link */
 nav a.selected, nav a:hover {
-  color: #32673f;
+	color: #32673f;
 }

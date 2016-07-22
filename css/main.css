@@ -21,16 +21,20 @@ img {
 	max-width: 100%;
 }
 
+h3 {
+	margin: 0 0 1em 0; /*insurance policy, for separating from bottom-laid elements*/
+}
+ 
 
 
 /**********************************
 HEADING
 ***********************************/
 header {
-	float: left; //for styling desktop layout
+	float: left; /*for styling desktop layout*/
 	margin: 0 0 30px 0;
 	padding: 5px 0 0 0;
-	width: 100%; //because floated, we must specify a width
+	width: 100%; /*because floated, we must specify a width*/
 }
 
 #logo {
@@ -95,7 +99,7 @@ footer {
 }
 
 .social-icon {
-	width: 20px; //half size of resolution of icons
+	width: 20px; /*half size of resolution of icons*/
 	height: 20px;
 	margin: 0 5px;
 }
@@ -135,12 +139,13 @@ PAGE: ABOUT
 ***********************************/
 
 .profile-photo {
-	display: block; // allow us to center image via margin
+	display: block; /* allow us to center image via margin*/
 	max-width: 150px;
-	margin: 0 auto 30px; // top l+r bot
+	margin: 0 auto 30px; /*top l+r bot*/
 	border-radius: 100%;
-}
+	
 
+}
 
 
 

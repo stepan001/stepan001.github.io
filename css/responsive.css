@@ -1,0 +1,94 @@
+@media screen and (min-width: 480px) {
+	
+
+
+	/**********************************
+	TWO COLUMN LAYOUT
+	***********************************/
+	
+	/*Layout for contact.html page*/
+	#primary {
+		width: 50%;
+		float: left;
+	}
+
+	#secondary {
+		width: 40%;
+		float: right; /*float right - for cases with issues in browsers*/
+	}
+	
+
+
+
+	/**********************************
+	PAGE: PORTFOLIO (3 COLUMNS)
+	***********************************/
+
+	/*Layout for #gallery in index.html
+		3 columns
+		2.5% margin left and right for each column
+		5% margin totally for each column
+		5% * 3 = 15% margin for all all columns
+		85% for width for all columns
+		85% / 3 = 28.3333 width for each column
+	*/
+	#gallery li {
+		width: 28.3333%;
+	}
+
+	/*Fix issue of breaking of stream in case of too long captions (paragraphs in our case). So, we clear:left each 4th li for fixing good streaming function.*/
+	#gallery li:nth-child(4n) {
+		clear: left;
+	}
+
+	/**********************************
+	PAGE: ABOUT
+	***********************************/
+	
+	.profile-photo {
+		float: left;
+		margin: 0 5% 80px 0; /*80px on bottom - for cases, when text wrap around photo on bottom side*/
+	}
+
+	
+}
+
+@media screen and (min-width: 660px) {
+	
+
+
+	/**********************************
+	HEADING
+	***********************************/
+	nav {
+		background: none;
+		float: right;
+		font-size: 1.125em;
+		margin-right: 5%;
+		text-align: right;
+		width: 45%;
+
+	}
+
+	#logo {
+		float: left;
+		margin-left: 5%;
+		text-align: left;
+		width: 45%;
+	}
+
+	h1 {
+		font-size: 2.5em;
+	}
+
+	h2 {
+		font-size: 0.825em;
+		margin-bottom: 20px;
+	}
+
+	/*design improvement*/
+	header {
+		border-bottom: 5px solid #599a68;
+		margin-bottom: 60px;
+	}
+}
